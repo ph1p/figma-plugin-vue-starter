@@ -10,6 +10,14 @@ module.exports = {
     optimization: {
       splitChunks: false
     },
+    entry: {
+      app: './src/ui/main.ts'
+    },
+    resolve: {
+      alias: {
+        '@': __dirname + '/src/ui'
+      }
+    },
     output: {
       filename: '[name].js',
       chunkFilename: '[name].js'

@@ -11,7 +11,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class HelloWorld extends Vue {
+export default class CreateRect extends Vue {
   count: number = 0;
 
   createRect() {
