@@ -1,0 +1,7 @@
+{
+  "name": "Figma Plugin with vue",
+  "id": "12345",
+  "api": "1.0.0",
+  "main": "./dist/main.js",
+  "ui": "./dist/index.html"
+}
