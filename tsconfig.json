@@ -1,10 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "esnext",
+    "target": "esnext",
     "typeRoots": [
-      "./",
-      "./src",
+      "./src/typings",
     ],
     "outDir": "./dist",
     "strict": false,
@@ -14,7 +12,6 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
     "baseUrl": ".",
     "types": [
       "node",
@@ -27,16 +24,16 @@
       ]
     },
     "lib": [
-      "es6",
+      "esnext",
       "dom"
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
+    "src/**/*.ts*",
+    "src/**/*.tsx*",
     "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.ts*",
+    "tests/**/*.tsx*"
   ],
   "exclude": [
     "node_modules"

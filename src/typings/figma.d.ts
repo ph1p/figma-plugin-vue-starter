@@ -97,7 +97,7 @@ interface UIAPI {
 interface ViewportAPI {
   center: { x: number; y: number };
   zoom: number;
-  scrollAndZoomIntoView(nodes: ReadonlyArray<BaseNode>): any;
+  scrollAndZoomIntoView(nodes: ReadonlyArray<BaseNode>);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -356,7 +356,7 @@ interface Font {
 interface BaseNodeMixin {
   readonly id: string;
   readonly parent: (BaseNode & ChildrenMixin) | null;
-  name: string; // Note: setting this also sets `autoRename` to false on TextNodes
+  name: string; // Note: setting this also sets \`autoRename\` to false on TextNodes
   readonly removed: boolean;
   toString(): string;
   remove(): void;

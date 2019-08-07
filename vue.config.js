@@ -1,3 +1,4 @@
+let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 
@@ -22,12 +23,22 @@ module.exports = {
       filename: '[name].js',
       chunkFilename: '[name].js'
     },
+    devServer: {
+      writeToDisk: true
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template: 'public/index.html',
-        inlineSource: '.(js|css)$'
+        inlineSource: '.(js|css)$',
+        chunks: ['app']
       }),
       new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin)
     ]
+  },
+  chainWebpack: config => {
+    config
+      .entry('main')
+      .add('./src/main/index.ts')
+      .end();
   }
 };

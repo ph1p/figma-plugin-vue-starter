@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "watch:main": "tsc --watch ./src/main/index.ts --outFile ./dist/main.js",
-    "build": "vue-cli-service build --modern && npm run build:main",
-    "build:main": "tsc ./src/main/index.ts --outFile ./dist/main.js",
+    "build": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
@@ -16,7 +14,9 @@
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vue-server-renderer": "^2.6.10",
+    "vuex": "^3.0.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
@@ -39,6 +39,11 @@
     "ts-jest": "^23.0.0",
     "typescript": "^3.4.3",
     "vue-template-compiler": "^2.6.10"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
   },
   "prettier": {
     "singleQuote": true
