@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "typeRoots": [
-      "./src/typings",
-    ],
+    "typeRoots": ["./src/typings"],
     "outDir": "./dist",
     "strict": false,
     "jsx": "preserve",
@@ -13,20 +11,11 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "types": [
-      "node",
-      "webpack-env",
-      "jest"
-    ],
+    "types": ["node", "webpack-env", "jest"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "esnext",
-      "dom"
-    ]
+    "lib": ["esnext", "dom"]
   },
   "include": [
     "src/**/*.ts*",
@@ -35,7 +24,5 @@
     "tests/**/*.ts*",
     "tests/**/*.tsx*"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
