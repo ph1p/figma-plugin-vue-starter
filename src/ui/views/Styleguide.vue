@@ -71,61 +71,6 @@
       </div>
       <div class="checkbox__label">Label</div>
     </label>
-    <br />
-    <h2>Select menus</h2>
-    <br />
-    <h3>Without Groups with placeholder</h3>
-
-    <!-- Select menu with initial selection -->
-    <select name="" id="select-menu1" class="select-menu">
-      <option value="1">Item 1</option>
-      <option value="2" selected="selected">Item 2</option>
-      <option value="3">Item 3</option>
-      <option value="4">Item 4</option>
-    </select>
-
-    <br />
-    <br />
-
-    <!-- Select menu with placehoolder text -->
-    <select name="" id="select-menu2" class="select-menu" required>
-      <option value="">Please make a selection</option>
-      <option value="1">Item 1</option>
-      <option value="2">Item 2</option>
-      <option value="3">Item 3</option>
-      <option value="4">Item 4</option>
-    </select>
-
-    <br />
-    <br />
-
-    <!-- Select menu with option groups -->
-    <select name="" id="select-menu3" class="select-menu">
-      <optgroup>
-        <option value="1">Item 1</option>
-        <option value="2">Item 2</option>
-      </optgroup>
-      <optgroup>
-        <option value="3">Item 3</option>
-        <option value="4" selected="selected">Item 4</option>
-      </optgroup>
-    </select>
-
-    <br />
-    <br />
-
-    <!-- Select menu with option groups that have labels-->
-    <select name="" id="select-menu4" class="select-menu">
-      <optgroup label="Group A">
-        <option value="1">Item 1</option>
-        <option value="2">Item 2</option>
-      </optgroup>
-      <optgroup label="Group B">
-        <option value="3">Item 3</option>
-        <option value="4" selected="selected">Item 4</option>
-      </optgroup>
-    </select>
-
     <hr />
 
     <h1>Buttons</h1>
@@ -306,62 +251,6 @@
       </div>
       <div class="onboarding-tip__msg">Your onboarding tip goes here.</div>
     </div>
-
-    <hr />
-
-    <h1>Disclosure panel</h1>
-    <br /><br />
-    <h3>Disclosure</h3>
-    <br />
-    <ul class="disclosure">
-      <li class="disclosure__item">
-        <div class="disclosure__label">
-          Disclosure
-        </div>
-        <div class="disclosure__content">
-          Panel content here
-        </div>
-      </li>
-      <li class="disclosure__item">
-        <div class="disclosure__label">
-          Disclosure
-        </div>
-        <div class="disclosure__content">
-          Panel content here
-        </div>
-      </li>
-      <li class="disclosure__item">
-        <div class="disclosure__label">
-          Disclosure
-        </div>
-        <div class="disclosure__content">
-          Panel content here
-        </div>
-      </li>
-    </ul>
-
-    <br /><br />
-    <h3>Disclosure with section</h3>
-    <br />
-
-    <ul class="disclosure">
-      <li class="disclosure__item disclosure--section">
-        <div class="disclosure__label">
-          Disclosure
-        </div>
-        <div class="disclosure__content">
-          Panel content here
-        </div>
-      </li>
-      <li class="disclosure__item">
-        <div class="disclosure__label">
-          Disclosure
-        </div>
-        <div class="disclosure__content">
-          Panel content here
-        </div>
-      </li>
-    </ul>
   </div>
 </template>
 
